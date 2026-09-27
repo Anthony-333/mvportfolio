@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { ArrowUpRight, Award, FileText, GraduationCap, Mail, MapPin, Phone } from "lucide-react";
 import { certificates, education, experience, profile, projects, services, skills, summary } from "@/lib/data";
 import { LinkedInIcon } from "./icons";
@@ -111,8 +111,9 @@ export function Work() {
           <a
             key={p.title}
             href="#experience"
-            style={{ left: `${i * 14}%`, top: `${i * 13}%`, zIndex: i }}
-            className="group absolute w-[38%] perspective-distant"
+            // Stack order lives in a CSS variable so hover/focus can override it.
+            style={{ left: `${i * 14}%`, top: `${i * 13}%`, "--z": i } as CSSProperties}
+            className="group absolute z-(--z) w-[38%] perspective-distant hover:z-50 focus-visible:z-50"
           >
             <div
               className={`aspect-square rounded-2xl bg-linear-to-br ${p.hue} p-5 text-white shadow-2xl ring-1 ring-white/10 transition duration-500 transform-[rotateY(-22deg)_rotateX(8deg)] group-hover:-translate-y-6 group-hover:transform-[rotateY(0)_rotateX(0)]`}
