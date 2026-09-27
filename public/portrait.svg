@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#3ee27a"/>
+      <stop offset=".45" stop-color="#157a52"/>
+      <stop offset="1" stop-color="#0b1a14"/>
+    </radialGradient>
+  </defs>
+  <rect width="760" height="1400" fill="url(#bg)"/>
+  <circle cx="620" cy="260" r="260" fill="#fff" opacity=".06"/>
+  <circle cx="120" cy="900" r="340" fill="#000" opacity=".18"/>
+  <text x="380" y="640" text-anchor="middle" font-family="Georgia, serif" font-size="300" fill="#fff" opacity=".9">MV</text>
+</svg>
