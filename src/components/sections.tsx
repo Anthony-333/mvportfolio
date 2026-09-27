@@ -209,7 +209,6 @@ export function Contact() {
         <span>
           &copy; {new Date().getFullYear()} {profile.name}
         </span>
-        <span>Designed &amp; built with Next.js</span>
       </footer>
     </Section>
   );
