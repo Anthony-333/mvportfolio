@@ -10,7 +10,7 @@ export const profile = {
   email: "angelavalencia876@gmail.com",
   phone: "+63 916 175 8426",
   phoneHref: "tel:+639161758426",
-  portrait: "/portrait.svg", // swap for /portrait.jpg once you add your photo to /public
+  portrait: "/mv.png",
   avatar: "/avatar.svg",
   cv: "/Valencia-MariaAngela-Resume.pdf",
   cvFileName: "Valencia-MariaAngela-Resume.pdf",

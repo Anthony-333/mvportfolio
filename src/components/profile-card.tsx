@@ -19,7 +19,7 @@ export function ProfileCard() {
           fill
           priority
           sizes="(min-width: 1024px) 400px, 100vw"
-          className="object-cover transition-[filter] duration-700 dark:grayscale"
+          className="origin-bottom scale-115 object-cover transition-[filter] duration-700 dark:grayscale"
         />
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent via-45% to-black/90" />
 
