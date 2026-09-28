@@ -5,6 +5,7 @@ import {
   ArrowUp,
   Boxes,
   BriefcaseBusiness,
+  FolderOpen,
   CircleUser,
   Copy,
   House,
@@ -21,6 +22,7 @@ export const sections: { id: string; label: string; Icon: LucideIcon }[] = [
   { id: "about", label: "About", Icon: CircleUser },
   { id: "experience", label: "Experience", Icon: BriefcaseBusiness },
   { id: "work", label: "Built", Icon: Copy },
+  { id: "projects", label: "Projects", Icon: FolderOpen },
   { id: "skills", label: "Skills", Icon: Boxes },
   { id: "contact", label: "Contact", Icon: Send },
 ];

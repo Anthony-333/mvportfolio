@@ -4,7 +4,7 @@ import { certificates, education, experience, profile, projects, services, skill
 import { LinkedInIcon } from "./icons";
 import { Reveal } from "./reveal";
 
-function Section({ id, eyebrow, title, children }: { id: string; eyebrow: string; title: ReactNode; children: ReactNode }) {
+export function Section({ id, eyebrow, title, children }: { id: string; eyebrow: string; title: ReactNode; children: ReactNode }) {
   return (
     <section id={id} className="scroll-mt-8 border-t border-line py-24">
       <Reveal>
@@ -16,7 +16,7 @@ function Section({ id, eyebrow, title, children }: { id: string; eyebrow: string
   );
 }
 
-const card = "rounded-3xl border border-line bg-surface";
+export const card = "rounded-3xl border border-line bg-surface";
 
 export function Services() {
   return (

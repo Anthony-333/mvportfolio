@@ -111,6 +111,44 @@ export const projects = [
   { title: "Geospatial Digital Maps", tag: "MIESCOR", hue: "from-neutral-600 to-black" },
 ];
 
+// Featured projects — placeholder content, replace with real details.
+// Drop preview images in /public/projects and list them under `images` (first one is the cover).
+export const featuredProjects = [
+  {
+    title: "Project One",
+    year: "2026",
+    role: "Front-End Developer",
+    description:
+      "A short summary of the project: what it is, who it was for and the problem it solved. Replace this with the real details.",
+    highlights: ["Built from Figma designs", "Fully responsive layout", "Custom WordPress theme"],
+    stack: ["WordPress", "PHP", "SASS", "JavaScript"],
+    images: ["/projects/project-one-1.svg", "/projects/project-one-2.svg"],
+    links: { live: "https://example.com", code: "https://github.com" },
+  },
+  {
+    title: "Project Two",
+    year: "2025",
+    role: "Email Developer",
+    description:
+      "A short summary of the project: what it is, who it was for and the problem it solved. Replace this with the real details.",
+    highlights: ["Tested across major email clients", "Reusable modular blocks"],
+    stack: ["HTML", "CSS", "Bloomreach"],
+    images: ["/projects/project-two-1.svg", "/projects/project-two-2.svg"],
+    links: { live: "https://example.com" },
+  },
+  {
+    title: "Project Three",
+    year: "2024",
+    role: "Front-End Developer",
+    description:
+      "A short summary of the project: what it is, who it was for and the problem it solved. Replace this with the real details.",
+    highlights: ["Plugin & API integration", "Performance and SEO tuning"],
+    stack: ["HTML", "CSS", "JavaScript", "API"],
+    images: ["/projects/project-three-1.svg", "/projects/project-three-2.svg"],
+    links: { live: "https://example.com", code: "https://github.com" },
+  },
+];
+
 export const skills = [
   { group: "Technical", items: ["HTML5", "CSS3", "SASS", "JavaScript", "PHP", "AWS"] },
   { group: "WordPress", items: ["Theme customisation", "Plugin integration", "API integration", "SEO optimisation", "Git"] },

@@ -6,13 +6,14 @@ import { Reveal } from "./reveal";
 
 function Ribbon() {
   return (
-    <svg viewBox="0 0 600 300" fill="none" className="h-full w-full overflow-visible" aria-hidden>
+    // On desktop the tail stays solid so ScrollRibbon can carry it on down the page.
+    <svg viewBox="0 0 600 300" fill="none" className="h-full w-full overflow-visible lg:[--ribbon-tail:1]" data-ribbon-anchor aria-hidden>
       <defs>
         <linearGradient id="ribbon" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="var(--accent)" stopOpacity="0" />
           <stop offset="0.35" stopColor="var(--accent)" />
           <stop offset="0.8" stopColor="var(--accent)" />
-          <stop offset="1" stopColor="var(--accent)" stopOpacity="0" />
+          <stop offset="1" stopColor="var(--accent)" style={{ stopOpacity: "var(--ribbon-tail, 0)" }} />
         </linearGradient>
         <linearGradient id="ribbon-shade" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
           <stop offset="0.3" stopColor="#000" stopOpacity="0" />

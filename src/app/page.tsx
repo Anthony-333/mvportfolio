@@ -2,6 +2,8 @@ import { Clock } from "@/components/clock";
 import { Hero } from "@/components/hero";
 import { ProfileCard } from "@/components/profile-card";
 import { About, Contact, Experience, Services, Skills, Work } from "@/components/sections";
+import { Projects } from "@/components/projects";
+import { ScrollRibbon } from "@/components/scroll-ribbon";
 import { SideNav } from "@/components/side-nav";
 
 export default function Home() {
@@ -13,12 +15,14 @@ export default function Home() {
         <div className="absolute right-0 top-4 lg:right-2">
           <Clock />
         </div>
-        <div className="max-w-3xl">
+        <div className="relative isolate max-w-3xl">
+          <ScrollRibbon />
           <Hero />
           <Services />
           <About />
           <Experience />
           <Work />
+          <Projects />
           <Skills />
           <Contact />
         </div>
