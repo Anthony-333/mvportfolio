@@ -113,39 +113,61 @@ export const projects = [
 
 // Featured projects — placeholder content, replace with real details.
 // Drop preview images in /public/projects and list them under `images` (first one is the cover).
-export const featuredProjects = [
+export const projectCategories = ["WordPress", "Email development"] as const;
+
+export type ProjectCategory = (typeof projectCategories)[number];
+
+export const featuredProjects: {
+  title: string;
+  category: ProjectCategory;
+  year: string;
+  role: string;
+  description: string;
+  highlights: string[];
+  stack: string[];
+  images: string[];
+  links: { live?: string; code?: string; download?: string };
+}[] = [
   {
-    title: "Project One",
+    title: "The Coastal Yacht Club",
+    category: "WordPress",
     year: "2026",
-    role: "Front-End Developer",
+    role: "WordPress Developer",
     description:
-      "A short summary of the project: what it is, who it was for and the problem it solved. Replace this with the real details.",
-    highlights: ["Built from Figma designs", "Fully responsive layout", "Custom WordPress theme"],
-    stack: ["WordPress", "PHP", "SASS", "JavaScript"],
-    images: ["/projects/project-one-1.svg", "/projects/project-one-2.svg"],
-    links: { live: "https://example.com", code: "https://github.com" },
+      "A luxury yacht charter site for Mediterranean and worldwide private charters, built on a custom WordPress theme with a yacht search, featured fleet and curated destinations.",
+    highlights: [
+      "Custom theme built from the design",
+      "Yacht search with destination, date and guest filters",
+      "Fleet and destination carousels",
+      "Charter enquiry forms",
+    ],
+    stack: ["WordPress", "PHP", "SASS", "JavaScript", "Contact Form 7"],
+    images: ["/projects/coastal-yacht-club-1.png", "/projects/coastal-yacht-club-2.png", "/projects/coastal-yacht-club-3.png"],
+    links: { live: "https://thecoastalyachtclub.com/" },
   },
   {
-    title: "Project Two",
+    title: "888poker · $25 Freeroll",
+    category: "Email development",
     year: "2025",
     role: "Email Developer",
     description:
-      "A short summary of the project: what it is, who it was for and the problem it solved. Replace this with the real details.",
-    highlights: ["Tested across major email clients", "Reusable modular blocks"],
-    stack: ["HTML", "CSS", "Bloomreach"],
-    images: ["/projects/project-two-1.svg", "/projects/project-two-2.svg"],
-    links: { live: "https://example.com" },
+      "A promotional campaign email for 888poker's regulated German market, built on the brand's regulated template with localised legal footer and account details.",
+    highlights: ["Responsive, table-based layout", "Regulated-market template and footer", "Personalisation fields for player details"],
+    stack: ["HTML", "CSS", "Acoustic Marketing Cloud"],
+    images: ["/projects/888poker-freeroll-1.png", "/projects/888poker-freeroll-2.png"],
+    links: { live: "/projects/emails/888poker-freeroll.html", download: "/projects/emails/888poker-freeroll.eml" },
   },
   {
-    title: "Project Three",
-    year: "2024",
-    role: "Front-End Developer",
+    title: "888poker · Galáxia de Ases",
+    category: "Email development",
+    year: "2025",
+    role: "Email Developer",
     description:
-      "A short summary of the project: what it is, who it was for and the problem it solved. Replace this with the real details.",
-    highlights: ["Plugin & API integration", "Performance and SEO tuning"],
-    stack: ["HTML", "CSS", "JavaScript", "API"],
-    images: ["/projects/project-three-1.svg", "/projects/project-three-2.svg"],
-    links: { live: "https://example.com", code: "https://github.com" },
+      "A Portuguese-market tournament campaign email promoting the €10 Galáxia de Ases series, with a hero banner, freeroll schedule and terms.",
+    highlights: ["Responsive, table-based layout", "Dynamic freeroll listings", "Localised for the Portuguese regulated market"],
+    stack: ["HTML", "CSS", "Acoustic Marketing Cloud"],
+    images: ["/projects/888poker-galaxia-de-ases-1.png", "/projects/888poker-galaxia-de-ases-2.png"],
+    links: { live: "/projects/emails/888poker-galaxia-de-ases.html", download: "/projects/emails/888poker-galaxia-de-ases.eml" },
   },
 ];
 
